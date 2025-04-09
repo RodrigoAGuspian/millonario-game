@@ -1,0 +1,4 @@
+pregunta,opcion1,opcion2,opcion3,opcion4,respuesta_correcta,dificultad
+"¿Cuál es la capital de Francia?",Londres,París,Madrid,Roma,1,easy
+"¿Cuántos lados tiene un triángulo?",3,4,5,6,0,easy
+"¿Qué animal es conocido como el rey de la selva?",Tigre,León,Pantera,Guepardo,1,easy

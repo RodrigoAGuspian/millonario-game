@@ -1,26 +1,63 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main class="app-container">
+    <header class="app-header">
+      <a class="template-link" href="/questions_template.csv" download>
+        Descargar plantilla CSV
+      </a>
+    </header>
+
+    <GameScreen />
+
+    <footer class="app-footer">
+      <p>¿Quién quiere ser millonario? - Versión educativa</p>
+    </footer>
+  </main>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import GameScreen from './components/GameScreen.vue';
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #000066;
+  padding: 0.5rem 1rem;
+  text-align: right;
+}
+
+.template-link {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.template-link:hover {
+  color: #ffd700;
+}
+
+.app-footer {
+  background-color: #000066;
+  padding: 1rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: auto;
+  font-size: 0.8rem;
 }
 </style>
