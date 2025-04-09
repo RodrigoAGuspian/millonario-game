@@ -2,6 +2,5 @@ name = "millionaire-game"
 compatibility_date = "2025-04-09"
 type = "javascript"
 
-[site]
-bucket = "./dist"
-entry-point = "."
+[assets]
+directory = "./dist"
